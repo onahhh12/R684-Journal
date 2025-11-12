@@ -50,6 +50,72 @@ body {
   z-index: 2;
 }
 
+/* Buttons below logo */
+.button-group {
+  position: absolute;
+  bottom: 40%; /* slightly above your .content section */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  z-index: 2;
+}
+
+/* Button style */
+/* Gradient border buttons */
+.button-group button {
+  position: relative;
+  background: black; /* inner background */
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+/* Gradient border frame */
+.button-group button::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 32px;
+  background: linear-gradient(90deg, #ee4700, #510084, #030f69);
+  z-index: -1;
+}
+
+/* Keep the inside black (cover center) */
+.button-group button::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  border-radius: 28px;
+  background: black; /* same as inner button background */
+  z-index: -1;
+}
+
+/* Hover glow */
+.button-group button:hover::before {
+  filter: brightness(1.3);
+  transition: 0.3s ease;
+}
+
+/* Optional: subtle scale on hover */
+.button-group button:hover {
+  transform: scale(1.05);
+}
+
+
 .content {
   position: absolute;
   bottom: 25%;
