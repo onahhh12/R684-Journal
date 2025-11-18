@@ -114,16 +114,16 @@ body {
 
 /* Responsive design */
 @media (max-width: 768px) {
-  .logo {
-    width: 200px;
-    top: 30%;
-  }
-
-  .button-group a {
-    top: 50%;
+  .button-group {
     flex-direction: column;
     gap: 10px;
   }
+
+  .button-group a {
+    font-size: 14px;
+    padding: 10px 24px;
+  }
+}
 
   .button-group button {
     font-size: 14px;
