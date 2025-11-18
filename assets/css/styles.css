@@ -38,7 +38,7 @@ body {
 /* LOGO */
 .logo {
   position: absolute;
-  top: 32%;
+  top: 40%;
   left: 50%;
   transform: translateX(-50%);
   width: 240px;
