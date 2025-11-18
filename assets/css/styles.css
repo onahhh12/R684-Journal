@@ -142,7 +142,7 @@ body {
     top: 28%;
   }
 
-  .button-group {
+  .button-group a {
     top: 48%;
     flex-direction: column;
     gap: 8px;
