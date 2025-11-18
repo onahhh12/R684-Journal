@@ -60,16 +60,17 @@ body {
 
 /* BUTTON STYLE */
 .button-group a {
-  text-decoration: none;
+  text-decoration: none;    
   background: #000;
   border: 2px solid;
   border-image: linear-gradient(90deg, #ee4700, #510084, #030f69) 1;
+  border-radius: 8px;       
+  color: #fff;
   padding: 12px 28px;
-  border-radius: 12px;
   font-size: 16px;
   font-weight: 600;
-  color: #fff;
-  transition: 0.3s ease;
+  cursor: pointer;
+  transition: all 0.3s ease;
   box-shadow: 0 0 0 rgba(255, 255, 255, 0);
 }
 
